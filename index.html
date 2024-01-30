@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>FORMULARIO</title>
+    <body style="background-color: magenta;"></body>
+</head>
+
+<body>
+    <form method="post" action="actividades.php">
+        <label for="id">Id
+            <input type="text" name="txtId">
+        </label> <br>
+        <label for="nombre">Nombre
+            <input type="text" name="txtNombre">
+        </label> <br>
+        <label for="primer_apellido">Primer Apellido
+            <input type="text" name="txtPrimer_apellido">
+        </label> <br>
+        <label for="segundo_apellido">Segundo Apellido
+            <input type="text" name="txtSegundo_apellido">
+        </label> <br>
+        <label for="sexo">Sexo
+            <input type="text" name="txtSexo">
+        </label>
+
+        <label for="accion">Acción</label>
+        <select name="cmbAccion" id="accion">
+            <option value="registrar">Insertar</option>
+            <option value="eliminar">Eliminar</option>
+            <option value="modificar">Actualizar</option>
+            <option value="selecionaruno">Selecionar Uno</option>
+            <option value="listartodos">Listar Todos</option>
+        </select>
+        <button type="submit">EJECUTAR</button>
+    </form>
+</body>
+
+</html>
